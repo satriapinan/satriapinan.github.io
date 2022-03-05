@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="indonesia">
+	<head>
+		<!-- Metadata -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Satria Pinandita Abyatarsyah">
+		<meta name="description" content="Tugas Praktikum 1 mata kuliah Desain & Pemrograman Web">
+
+		<title>Tugas Praktikum 1 - Contact</title>
+
+		<!-- Eksternal CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<!-- Header -->
+
+		<!-- Logo -->
+		<div class="wrapper_logo">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png">
+					<h2>Jawa Barat</h2>
+				</a>
+			</div>
+		</div>
+		<!-- Navbar -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="wisata.html">Wisata</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main Content -->
+		
+		<main>
+			<content>
+				<article>
+					<!-- form pesan -->
+					<form method="post" action="">
+						<!-- nama -->
+						<label for="name">
+	                        Nama<br>
+	                        <input name="name" id="name" type="text" placeholder="Nama kamu..." required 
+	                        oninvalid="this.setCustomValidity('Harap isi bidang ini.')"
+	                        oninput="this.setCustomValidity('')">
+	                    </label>
+	                    <br><br>
+	                    <!-- asal kota -->
+						<label for="city">
+		                   	Kota/Kabupaten<br>
+		                    <select name="city" id="city" required 
+		                    oninvalid="this.setCustomValidity('Harap isi bidang ini.')"
+	                        oninput="this.setCustomValidity('')">
+		                    	<option value="" disabled selected hidden>Asal kamu...</option>
+		                    	<option value="Kabupaten Bandung">Bandung</option>
+		                    	<option value="Kabupaten Indramayu">Indramayu</option>
+		                    	<option value="Kota 1">Kota 1</option>
+		                    	<option value="Kota 2">Kota 2</option>
+		                    </select>
+		                </label>
+	                    <br><br>
+	                    <!-- pesan -->
+						<label for="message">
+	                        Pesan<br>
+	                        <textarea
+		                        name="message"
+		                        id="message"
+		                        required
+		                        oninvalid="this.setCustomValidity('Harap isi bidang ini.')"
+	                        	oninput="this.setCustomValidity('')"
+		                    ></textarea>
+	                    </label>
+	                    <br><br>
+	                    <!-- submit button -->
+                		<input id="submit" type="submit" value="Submit">
+	                </form>
+				</article>
+			</content>
+			<!-- Sidebar -->
+			<aside>
+				<!-- Profile -->
+				<h3>Profil Diri</h3>
+				<img src="images/profil.png">
+				<table>
+					<tr>
+						<td><b>Nama</b></td>
+						<td>Satria Pinandita Abyatarsyah</td>
+					</tr>
+					<tr>
+						<td><b>NIM</b></td>
+						<td>2000514</td>
+					</tr>
+					<tr>
+						<td><b>Gender</b></td>
+						<td>Laki-laki</td>
+					</tr>
+					<tr>
+						<td><b>Email</b></td>
+						<td>satriapinan@gmail.com</td>
+					</tr>
+				</table>
+			</aside>
+		</main>
+
+		<!-- Footer -->
+
+		<footer>
+			<a href="">Praktikum Desain dan Pemrograman Web</a>
+		</footer>
+	</body>
+</html>

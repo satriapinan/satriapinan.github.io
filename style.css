@@ -1,0 +1,175 @@
+* {
+	margin         : 0;
+	padding        : 0;
+	text-decoration: none;
+	box-sizing     : border-box;
+	font-family    : 'Poppins', sans-serif;
+}
+
+/* HEADER */
+/*----------------------------------------------------*/
+
+/* Logo */
+.wrapper_logo {
+	height          : 45vh;
+	width           : 100%;
+	background-color: #0226FD;
+}
+.logo {
+	display        : flex;
+	height         : 100%;
+	align-items    : center;
+	justify-content: center;
+	text-align     : center;
+}
+.logo h2 {
+	color: #fff;
+}
+.logo img {
+	width: 100px;
+}
+
+/* Navbar */
+nav {
+	background-color: #3552FD;
+	padding         : 5px 25px;
+	position        : sticky;
+	position        : -webkit-sticky;
+	top             : 0;
+}
+nav ul li {
+	display: inline-block;
+	padding: 8px 10px;
+}
+nav ul li a {
+	color    : #fff;
+	font-size: 13px;
+}
+nav ul li a:hover {
+	font-weight: bold;
+}
+
+/* MAIN CONTENT */
+/*----------------------------------------------------*/
+
+main {
+	display        : flex;
+	height         : auto;
+	width          : 100%;
+	justify-content: space-between;
+	padding        : 30px 15px 10px 15px;
+}
+main content {
+	width: 79%;
+}
+
+/* Article/Content */
+main content article {
+	padding      : 25px 20px 15px 20px;
+	margin-bottom: 10px;
+	box-shadow   : 0 0 5px 0px rgba(0,0,0,0.3);
+}
+main content article img {
+	width : 100%;
+	height: 300px;
+	margin: 10px 0;
+}
+
+/* Sidebar/Profile */
+main aside {
+	padding       : 25px 10px 20px 10px;
+	height        : 100%;
+	width         : 20%;
+	display       : flex;
+	flex-direction: column;
+	align-items   : center;
+	box-shadow    : 0 0 5px 0px rgba(0,0,0,0.2);
+}
+main aside img {
+	margin       : 10px 0;
+	width        : 50%;
+	border-radius: 50%;
+}
+
+/* Form input */
+form {
+	margin-left: 15px;
+}
+label input, label textarea, label select {
+	padding      : 10px 18px;
+	min-width    : 98.5%;
+	max-width    : 98.5%;
+	margin-top   : 5px;
+	border-radius: 5px;
+	border-color : rgba(0,0,0,0.2);
+	border-width : 1px;
+}
+label select:invalid {  
+	color: grey;
+}
+#submit {
+	width           : 98.5%;
+	padding         : 12px 0;
+	color           : white;
+	font-size       : 15px;
+	font-weight     : 600;
+	background-color: #0226FD;
+	border          : none;
+	border-radius   : 5px;
+	box-shadow      : 0 2px 5px 0px rgba(0,0,0,0.5);
+	cursor          : pointer;
+}
+#submit:hover {
+	background-color: blue;
+}
+
+/* Text */
+h3, h4 {
+	color: #0226FD;
+}
+p, td {
+	font-size: 12px;
+}
+p {
+	text-align   : justify;
+	margin-bottom: 10px;
+}
+td {
+	padding: 0 3px;
+}
+
+/* FOOTER */
+/*----------------------------------------------------*/
+
+footer {
+	background-color: #0226FD;
+	text-align      : center;
+	padding         : 25px;
+}
+footer a {
+	color    : white;
+	font-size: 12px;
+}
+
+/* RESPONSIVE PURPOSE */
+/*----------------------------------------------------*/
+
+@media(max-width: 1100px) {
+	main {
+		flex-direction: column;
+	}
+	main content {
+		width: 100%;
+	}
+	main aside {
+		width: 100%;
+	}
+	main aside img {
+		width: 200px;
+	}
+}
+@media(max-width: 500px) {
+	main content article img {
+		height: 150px;
+	}
+}
