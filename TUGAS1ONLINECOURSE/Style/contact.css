@@ -1,0 +1,17 @@
+/* Form Section */
+#form {
+	width        : 80%;
+	margin-bottom: 30px;
+}
+label input, label textarea {
+	padding      : 10px 18px;
+	min-width    : 100%;
+	max-width    : 100%;
+	margin-top   : 5px;
+	border-radius: 5px;
+	border-color : rgba(0,0,0,0.2);
+	border-width : 1px;
+}
+label textarea {
+	min-height: 150px;
+}

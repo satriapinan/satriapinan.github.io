@@ -1,0 +1,26 @@
+/* About Section */
+#about {
+	text-align   : center;
+	margin-bottom: 10px;
+}
+#about h1 {
+	margin-bottom: 50px;
+}
+.founders {
+	width          : 100%;
+	display        : flex;
+	justify-content: space-around;
+}
+.founder {
+	text-align: center;
+	width     : 30%;
+}
+.founder img {
+	width: 60%;
+}
+.founder span{
+	font-size: 14px;
+}
+#about p {
+	margin-top: 50px;
+}
