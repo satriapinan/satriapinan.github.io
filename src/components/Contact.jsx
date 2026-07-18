@@ -28,10 +28,6 @@ export default function Contact() {
               <span className="contact__link-label mono">{ui.linkGithub}</span>
               <span className="contact__link-value">{contact.github}</span>
             </a>
-            <a className="contact__link" href={`tel:${contact.phone.replace(/\s|-/g, "")}`}>
-              <span className="contact__link-label mono">{ui.linkPhone}</span>
-              <span className="contact__link-value">{contact.phone}</span>
-            </a>
           </div>
         </div>
       </div>
