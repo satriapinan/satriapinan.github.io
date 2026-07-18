@@ -39,13 +39,30 @@ export default function App() {
       const total = doc.scrollHeight - doc.clientHeight;
       if (total <= 0) return;
 
-      const wp = SECTION_IDS.map((id) => {
+      const rawWp = SECTION_IDS.map((id) => {
         const el = document.getElementById(id);
         if (!el) return null;
-        return { id, label: routeLabels[id], ratio: el.offsetTop / total };
+        let ratio = (el.offsetTop - doc.clientHeight * 0.3) / total;
+        return { id, label: routeLabels[id], ratio: Math.max(0, Math.min(1, ratio)) };
       }).filter(Boolean);
 
-      setWaypoints(wp);
+      const minDistance = 0.12;
+      for (let i = 1; i < rawWp.length; i++) {
+        if (rawWp[i].ratio - rawWp[i - 1].ratio < minDistance) {
+          rawWp[i].ratio = rawWp[i - 1].ratio + minDistance;
+        }
+      }
+
+      if (rawWp.length > 0 && rawWp[rawWp.length - 1].ratio > 1) {
+        rawWp[rawWp.length - 1].ratio = 1;
+        for (let i = rawWp.length - 2; i >= 0; i--) {
+          if (rawWp[i + 1].ratio - rawWp[i].ratio < minDistance) {
+            rawWp[i].ratio = rawWp[i + 1].ratio - minDistance;
+          }
+        }
+      }
+
+      setWaypoints(rawWp);
     };
 
     measure();
@@ -65,6 +82,15 @@ export default function App() {
         const el = document.getElementById(id);
         if (el && el.offsetTop <= y) current = id;
       }
+
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop || document.body.scrollTop;
+      const scrollHeight = doc.scrollHeight - doc.clientHeight;
+      
+      if (scrollHeight > 0 && scrollTop >= scrollHeight - 50) {
+        current = SECTION_IDS[SECTION_IDS.length - 1];
+      }
+
       setActiveId(current);
     };
     onScroll();
