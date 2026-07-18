@@ -1,0 +1,24 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.skills__group {
+  border-top: 1px solid var(--line-strong);
+  padding-top: 14px;
+}
+
+.skills__label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 14px;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

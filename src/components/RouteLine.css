@@ -1,0 +1,102 @@
+.routeline {
+  position: fixed;
+  left: 28px;
+  top: 0;
+  height: 100vh;
+  width: 40px;
+  z-index: 40;
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .routeline { display: block; }
+}
+
+.routeline__track {
+  position: absolute;
+  top: 12vh;
+  bottom: 12vh;
+  left: 0;
+  width: 1px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--line-strong) 0,
+    var(--line-strong) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+}
+
+.routeline__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--route), var(--accent));
+  transition: height 60ms linear;
+}
+
+.routeline__dot {
+  position: absolute;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--text-faint);
+  transform: translateY(-50%);
+  transition: border-color 200ms ease, background 200ms ease;
+}
+
+.routeline__dot.is-passed {
+  border-color: var(--route);
+}
+
+.routeline__dot.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.routeline__label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  white-space: nowrap;
+  transition: color 200ms ease;
+}
+
+.routeline__dot.is-active .routeline__label {
+  color: var(--accent);
+}
+
+.routeline__marker {
+  position: absolute;
+  left: -8px;
+  transform: translateY(-50%);
+  transition: top 60ms linear;
+}
+
+.routeline__marker-dot {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  position: relative;
+}
+
+.routeline__marker-dot::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
