@@ -2,7 +2,6 @@ export const contact = {
   name: "Satria Pinandita Abyatarsyah",
   role: "Full Stack Engineer — Frontend Focused",
   email: "satriapinanditaabyatarsyah@gmail.com",
-  phone: "+62 877-1860-9257",
   linkedin: "linkedin.com/in/satriapinan",
   github: "github.com/satriapinan",
 };

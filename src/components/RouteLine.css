@@ -33,7 +33,7 @@
   left: 0;
   width: 1px;
   background: linear-gradient(to bottom, var(--route), var(--accent));
-  transition: height 60ms linear;
+  transition: height 300ms ease;
 }
 
 .routeline__dot {
@@ -80,7 +80,7 @@
   position: absolute;
   left: -8px;
   transform: translateY(-50%);
-  transition: top 60ms linear;
+  transition: top 300ms ease;
 }
 
 .routeline__marker-dot {
