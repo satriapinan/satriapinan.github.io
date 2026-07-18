@@ -1,0 +1,117 @@
+.hero {
+  padding: 96px 0 64px;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .hero__grid { grid-template-columns: 1fr; }
+}
+
+.hero__codeline {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  margin: 22px 0 6px;
+}
+
+.hero__name {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.04;
+  color: var(--text);
+}
+
+.hero__role {
+  margin-top: 18px;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.hero__tagline {
+  margin-top: 18px;
+  max-width: 46ch;
+  color: var(--text-dim);
+  font-size: 1.05rem;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 14px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+  display: inline-block;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.btn--primary:hover { transform: translateY(-2px); }
+
+.btn--ghost {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hero__panel {
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  padding: 20px 22px;
+  margin-top: 8px;
+}
+
+.hero__panel-title {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}
+
+.hero__panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dot--live {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
