@@ -8,8 +8,8 @@ export const contact = {
 
 export const skills = [
   { group: "Languages", items: ["TypeScript", "JavaScript", "Java", "Go"] },
-  { group: "Frontend", items: ["React.js", "Next.js", "Vite", "Tailwind CSS", "Material UI", "Angular", "Vue"] },
-  { group: "Backend", items: ["Node.js (Express)", "Java Spring Boot", "ASP.NET Core"] },
+  { group: "Frontend", items: ["React.js", "Next.js", "Vite", "Tailwind CSS", "Material UI"] },
+  { group: "Backend", items: ["Node.js (Express)", "Java Spring Boot", "Gin"] },
   { group: "Database", items: ["PostgreSQL", "MySQL", "MongoDB"] },
   { group: "State Management", items: ["Zustand", "Redux", "TanStack Query"] },
   { group: "Architecture", items: ["Micro Frontend (Vite Federation)", "Microservices", "REST API", "SSE", "OAuth 2.0", "WSO2"] },
