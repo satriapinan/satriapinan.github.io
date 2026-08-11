@@ -9,15 +9,13 @@ export const contact = {
 export const skills = [
   { group: "Languages", items: ["TypeScript", "JavaScript", "Java", "Go"] },
   { group: "Frontend", items: ["React.js", "Next.js", "Vite", "Tailwind CSS", "Material UI", "Angular", "Vue"] },
-  { group: "Backend", items: ["Node.js (Express)", "Java Spring Boot", "Nest.js", "CodeIgniter", "ASP.NET Core"] },
+  { group: "Backend", items: ["Node.js (Express)", "Java Spring Boot", "ASP.NET Core"] },
   { group: "Database", items: ["PostgreSQL", "MySQL", "MongoDB"] },
   { group: "State Management", items: ["Zustand", "Redux", "TanStack Query"] },
   { group: "Architecture", items: ["Micro Frontend (Vite Federation)", "Microservices", "REST API", "SSE", "OAuth 2.0", "WSO2"] },
   { group: "Tools & DevOps", items: ["Git", "GitLab", "CI/CD", "Docker", "Figma"] },
   { group: "Testing", items: ["Vitest"] },
 ];
-
-export const softSkills = ["Collaboration", "Problem Solving", "Creativity", "Growth Mindset", "Attention to Code Quality"];
 
 export const content = {
   id: {
@@ -41,8 +39,6 @@ export const content = {
       aboutTitle: "Ringkasan Profil",
       labelEducation: "Pendidikan",
       labelLanguage: "Bahasa",
-      labelSoftSkills: "Soft Skills",
-      labelOrganizations: "Organisasi",
       experienceEyebrow: "02 · pengalaman",
       experienceTitle: "Perjalanan Karier",
       present: "Sekarang",
@@ -77,7 +73,7 @@ export const content = {
     },
     profile: {
       tagline:
-        "Merancang sistem frontend berskala enterprise: micro-frontend, route planning, dan real-time tracking untuk logistik & institusi.",
+        "Merancang sistem frontend berskala enterprise: micro-frontend, alur kerja kompleks, dan data real-time untuk tim & institusi.",
       summary:
         "Full Stack Engineer dengan 3 tahun pengalaman di pengembangan enterprise berbasis React.js, Next.js, TypeScript, dan Vite, dilengkapi eksposur full stack melalui proyek freelance dan mandiri menggunakan Node.js, Java Spring Boot, dan Go. Berpengalaman dalam arsitektur micro-frontend, integrasi REST API, dan membangun aplikasi performa tinggi yang mudah dirawat lintas tim.",
       location: "Bandung & Jakarta, Indonesia",
@@ -87,10 +83,6 @@ export const content = {
       degree: "Sarjana Ilmu Komputer — IPK 3.79 / 4.00",
       period: "Sep 2020 — Feb 2025",
     },
-    organizations: [
-      { role: "Ketua Tim", org: "KKN Tematik UPI", period: "Jul 2023 — Agt 2023" },
-      { role: "Ketua Divisi Aspirasi", org: "DPM Keluarga Mahasiswa Komputer UPI", period: "Jan 2022 — Jan 2023" },
-    ],
     experience: [
       {
         code: "WP-04",
@@ -166,21 +158,12 @@ export const content = {
       { code: "PRJ-06", name: "Asuransi Kendaraan Bermotor", context: "PT Asuransi Jasa Indonesia · Profesional", period: "Apr 2024 — Agt 2024", role: "Frontend Engineer",
         tech: ["React.js", "JavaScript", "Vite", "Redux", "Material UI", "Ant Design"],
         desc: "Membangun portal klaim asuransi kendaraan multi-stakeholder dengan Role-Based Access Control (RBAC), menghubungkan asuransi, pelanggan, bengkel, dan surveyor dengan visibilitas status klaim real-time." },
-      { code: "PRJ-07", name: "ACI Phase 2", context: "PT Telkom Indonesia Tbk · Dukungan", period: "Nov 2023 — Feb 2024", role: "Frontend Engineer",
-        tech: ["React.js", "JavaScript", "Vite", "Material UI", "Rsuite"],
-        desc: "Berkontribusi pada fondasi platform asesmen enterprise yang aman untuk mendukung workflow pengadaan." },
       { code: "PRJ-08", name: "Pet Store", context: "Riset Arsitektur Cross-Framework (Proof of Concept)", period: "Mar 2026 — Apr 2026", role: "Full Stack Engineer",
         tech: ["Go", "Angular", "React.js", "Vue.js", "Vite", "Vitest"],
         desc: "Menunjukkan kelincahan teknis dengan membangun layanan backend terpadu (Go/Node.js) dan mengintegrasikannya ke berbagai framework frontend (React, Angular, Vue) untuk menganalisis trade-off performa, perbedaan state management, dan optimasi build." },
-      { code: "PRJ-09", name: "SimpleChat", context: "Proyek Belajar", period: "Agt 2024", role: "Full Stack Engineer",
-        tech: ["Next.js", "Nest.js", "Socket.io", "MongoDB", "Tailwind CSS", "JWT", "bcrypt"],
-        desc: "Aplikasi pesan real-time end-to-end dengan WebSocket, autentikasi aman, dan penyimpanan chat persisten." },
       { code: "PRJ-10", name: "Locomotive Simulation System", context: "Riset Arsitektur Microservices Event-Driven", period: "Nov 2023", role: "Full Stack Engineer",
         tech: ["React.js", "Node.js", "Java Spring Boot", "MongoDB", "MySQL", "Kafka", "Telegram Bots", "Microservices"],
         desc: "Merancang sistem simulasi real-time berbasis microservices dengan pelaporan Telegram otomatis dan dashboard live, menunjukkan arsitektur event-driven menggunakan Kafka lintas layanan terdistribusi." },
-      { code: "PRJ-11", name: "Talent Center", context: "Proyek Belajar", period: "Okt 2023 — Nov 2023", role: "Full Stack Engineer",
-        tech: ["React.js", "Java Spring Boot", "PostgreSQL"],
-        desc: "Platform talent sourcing dengan antarmuka klien dan admin terpisah, kepemilikan end-to-end frontend & backend." },
       { code: "PRJ-12", name: "Food Order", context: "Studi Komparatif Arsitektur Backend", period: "Feb 2024", role: "Backend Engineer",
         tech: ["ASP.NET Core", "Java Spring Boot", "PostgreSQL", "JWT", "MinIO"],
         desc: "Merancang API manajemen pemesanan makanan inti menggunakan Java Spring Boot dan ASP.NET Core untuk melakukan analisis komparatif langsung terhadap dua ekosistem backend enterprise utama." },
@@ -211,8 +194,6 @@ export const content = {
       aboutTitle: "Profile Summary",
       labelEducation: "Education",
       labelLanguage: "Languages",
-      labelSoftSkills: "Soft Skills",
-      labelOrganizations: "Organizations",
       experienceEyebrow: "02 · experience",
       experienceTitle: "Career Route",
       present: "Present",
@@ -247,7 +228,7 @@ export const content = {
     },
     profile: {
       tagline:
-        "Building enterprise-scale frontend systems: micro-frontends, route planning, and real-time tracking for logistics & institutions.",
+        "Building enterprise-scale frontend systems: micro-frontends, complex workflows, and real-time data for teams and institutions.",
       summary:
         "Full Stack Engineer with 3 years of experience in frontend-focused enterprise development using React.js, Next.js, TypeScript, and Vite, complemented by hands-on full stack exposure through freelance work and self-driven projects using Node.js, Java Spring Boot, and Go. Experienced in micro-frontend architecture, REST API integration, and delivering high-performance, maintainable applications across cross-functional teams.",
       location: "Bandung & Jakarta, Indonesia",
@@ -257,10 +238,6 @@ export const content = {
       degree: "Bachelor of Computer Science — GPA 3.79 / 4.00",
       period: "Sep 2020 — Feb 2025",
     },
-    organizations: [
-      { role: "Team Leader", org: "KKN Tematik UPI", period: "Jul 2023 — Aug 2023" },
-      { role: "Head of Aspiration Division", org: "DPM Keluarga Mahasiswa Komputer UPI", period: "Jan 2022 — Jan 2023" },
-    ],
     experience: [
       {
         code: "WP-04",
@@ -336,21 +313,12 @@ export const content = {
       { code: "PRJ-06", name: "Motor Vehicle Insurance", context: "PT Asuransi Jasa Indonesia · Professional", period: "Apr 2024 — Aug 2024", role: "Frontend Engineer",
         tech: ["React.js", "JavaScript", "Vite", "Redux", "Material UI", "Ant Design"],
         desc: "Built a multi-stakeholder vehicle insurance claim portal featuring Role-Based Access Control (RBAC), connecting insurers, customers, workshops, and surveyors with real-time claim status visibility." },
-      { code: "PRJ-07", name: "ACI Phase 2", context: "PT Telkom Indonesia Tbk · Support", period: "Nov 2023 — Feb 2024", role: "Frontend Engineer",
-        tech: ["React.js", "JavaScript", "Vite", "Material UI", "Rsuite"],
-        desc: "Contributed to the foundation of a secure enterprise assessment platform supporting procurement workflows." },
       { code: "PRJ-08", name: "Pet Store", context: "Cross-Framework Architecture Research (Proof of Concept)", period: "Mar 2026 — Apr 2026", role: "Full Stack Engineer",
         tech: ["Go", "Angular", "React.js", "Vue.js", "Vite", "Vitest"],
         desc: "Demonstrated technical agility by engineering a unified backend service (Go/Node.js) and successfully integrating it across multiple frontend frameworks (React, Angular, Vue) to analyze performance trade-offs, state management differences, and build optimization." },
-      { code: "PRJ-09", name: "SimpleChat", context: "Learning Project", period: "Aug 2024", role: "Full Stack Engineer",
-        tech: ["Next.js", "Nest.js", "Socket.io", "MongoDB", "Tailwind CSS", "JWT", "bcrypt"],
-        desc: "End-to-end real-time messaging application with WebSocket communication, secure auth, and persistent chat storage." },
       { code: "PRJ-10", name: "Locomotive Simulation System", context: "Event-Driven Microservices Architecture Study", period: "Nov 2023", role: "Full Stack Engineer",
         tech: ["React.js", "Node.js", "Java Spring Boot", "MongoDB", "MySQL", "Kafka", "Telegram Bots", "Microservices"],
         desc: "Engineered a microservices-based real-time simulation system with automated Telegram reporting and a live dashboard, demonstrating event-driven architecture using Kafka across distributed services." },
-      { code: "PRJ-11", name: "Talent Center", context: "Learning Project", period: "Oct 2023 — Nov 2023", role: "Full Stack Engineer",
-        tech: ["React.js", "Java Spring Boot", "PostgreSQL"],
-        desc: "Talent sourcing platform with separate client and admin interfaces, built end-to-end across frontend and backend." },
       { code: "PRJ-12", name: "Food Order", context: "Backend Architecture Comparative Study", period: "Feb 2024", role: "Backend Engineer",
         tech: ["ASP.NET Core", "Java Spring Boot", "PostgreSQL", "JWT", "MinIO"],
         desc: "Engineered a core food order management API utilizing both Java Spring Boot and ASP.NET Core to conduct a hands-on comparative analysis of two major enterprise backend ecosystems." },

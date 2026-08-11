@@ -4,11 +4,10 @@ import { content } from "../data/content";
 const LanguageContext = createContext(null);
 
 function detectInitialLang() {
-  if (typeof window === "undefined") return "id";
+  if (typeof window === "undefined") return "en";
   const stored = window.localStorage.getItem("lang");
   if (stored === "id" || stored === "en") return stored;
-  const browser = window.navigator.language || "id";
-  return browser.toLowerCase().startsWith("id") ? "id" : "en";
+  return "en";
 }
 
 export function LanguageProvider({ children }) {

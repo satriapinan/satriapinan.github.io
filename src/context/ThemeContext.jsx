@@ -3,10 +3,10 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 const ThemeContext = createContext(null);
 
 function detectInitialTheme() {
-  if (typeof window === "undefined") return "dark";
+  if (typeof window === "undefined") return "light";
   const stored = window.localStorage.getItem("theme");
   if (stored === "dark" || stored === "light") return stored;
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  return "light";
 }
 
 export function ThemeProvider({ children }) {
