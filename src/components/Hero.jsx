@@ -23,8 +23,11 @@ export default function Hero() {
           <p className="hero__tagline">{t.profile.tagline}</p>
 
           <div className="hero__cta">
-            <a className="btn btn--primary" href="/Satria_Pinandita_Abyatarsyah-CV.pdf" download>
+            <a className="btn btn--primary" href="./Satria_Pinandita_Abyatarsyah-CV.pdf" download>
               {t.ui.ctaDownload}
+            </a>
+            <a className="btn btn--ghost" href="#projects">
+              {t.ui.ctaProjects}
             </a>
             <a className="btn btn--ghost" href="#contact">
               {t.ui.ctaContact}

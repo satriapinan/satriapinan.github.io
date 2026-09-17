@@ -25,6 +25,30 @@
   max-width: 58ch;
 }
 
+.about__links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.about__link {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line-strong);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.about__link:hover {
+  border-color: var(--accent);
+  transform: translateX(3px);
+}
+
 .about__side {
   display: flex;
   flex-direction: column;

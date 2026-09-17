@@ -12,17 +12,27 @@ export default function About() {
         <h2 className="section__title">{ui.aboutTitle}</h2>
 
         <div className="about__grid">
-          <p className="about__summary">{profile.summary}</p>
+          <div>
+            <p className="about__summary">{profile.summary}</p>
+            <div className="about__links">
+              <a className="about__link mono" href="#experience">
+                {ui.aboutCtaExperience}
+              </a>
+              <a className="about__link mono" href="#projects">
+                {ui.aboutCtaProjects}
+              </a>
+            </div>
+          </div>
 
           <div className="about__side">
             <div className="about__block">
-              <p className="about__label mono">{ui.labelEducation}</p>
+              <h3 className="about__label mono">{ui.labelEducation}</h3>
               <p className="about__value">{education.school}</p>
               <p className="about__meta mono">{education.degree} · {education.period}</p>
             </div>
 
             <div className="about__block">
-              <p className="about__label mono">{ui.labelLanguage}</p>
+              <h3 className="about__label mono">{ui.labelLanguage}</h3>
               <p className="about__value">{ui.languageNames}</p>
             </div>
           </div>

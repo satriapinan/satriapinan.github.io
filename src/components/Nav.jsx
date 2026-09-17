@@ -18,6 +18,9 @@ export default function Nav({ activeId }) {
 
   return (
     <header className="nav">
+      <a href="#about" className="skip-link mono">
+        {t.ui.skipToContent}
+      </a>
       <div className="nav__inner container">
         <a href="#home" className="nav__brand mono" onClick={() => setOpen(false)}>
           satria<span className="nav__at">@</span>portfolio<span className="nav__cursor">_</span>
