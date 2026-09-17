@@ -67,9 +67,14 @@ export const content = {
       routeSkills: "skill",
       routeContact: "kontak",
       languageNames: "Indonesia · Inggris",
-      pageTitle: "Satria Pinandita Abyatarsyah — Frontend Engineer",
+      pageTitle: "Satria Pinandita Abyatarsyah — Full Stack Engineer (Frontend-Focused) | Portfolio",
       metaDescription:
-        "Satria Pinandita Abyatarsyah — Full Stack Engineer (Fokus Frontend). Portofolio, pengalaman, dan proyek.",
+        "Portofolio Satria Pinandita Abyatarsyah: Full Stack Engineer (Fokus Frontend) berpengalaman 3+ tahun dalam ekosistem React.js, TypeScript, Vite, dan arsitektur micro-frontend enterprise.",
+      ctaProjects: "Lihat Proyek",
+      aboutCtaExperience: "Jelajahi Karier →",
+      aboutCtaProjects: "Lihat Proyek →",
+      skipToContent: "Lewati ke konten utama",
+      footerBackToTop: "Kembali ke atas ↑",
     },
     profile: {
       tagline:
@@ -222,9 +227,14 @@ export const content = {
       routeSkills: "skills",
       routeContact: "contact",
       languageNames: "Indonesian · English",
-      pageTitle: "Satria Pinandita Abyatarsyah — Frontend Engineer",
+      pageTitle: "Satria Pinandita Abyatarsyah — Full Stack Engineer (Frontend-Focused) | Portfolio",
       metaDescription:
-        "Satria Pinandita Abyatarsyah — Full Stack Engineer (Frontend-Focused). Portfolio, experience, and projects.",
+        "Portfolio of Satria Pinandita Abyatarsyah: Full Stack Engineer (Frontend-Focused) with 3+ years of experience in React.js, TypeScript, Vite, and enterprise micro-frontend architectures.",
+      ctaProjects: "View Projects",
+      aboutCtaExperience: "Explore Career →",
+      aboutCtaProjects: "View Projects →",
+      skipToContent: "Skip to main content",
+      footerBackToTop: "Back to top ↑",
     },
     profile: {
       tagline:

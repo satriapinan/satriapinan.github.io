@@ -14,7 +14,7 @@ export default function Skills() {
         <div className="skills__grid">
           {skills.map((group) => (
             <div className="skills__group" key={group.group}>
-              <p className="skills__label mono">{group.group}</p>
+              <h3 className="skills__label mono">{group.group}</h3>
               <div className="skills__tags">
                 {group.items.map((item) => (
                   <span className="tag" key={item}>{item}</span>

@@ -20,11 +20,11 @@ export default function Contact() {
               <span className="contact__link-label mono">{ui.linkEmail}</span>
               <span className="contact__link-value">{contact.email}</span>
             </a>
-            <a className="contact__link" href={`https://${contact.linkedin}`} target="_blank" rel="noreferrer">
+            <a className="contact__link" href={`https://${contact.linkedin}`} target="_blank" rel="noopener noreferrer">
               <span className="contact__link-label mono">{ui.linkLinkedin}</span>
               <span className="contact__link-value">{contact.linkedin}</span>
             </a>
-            <a className="contact__link" href={`https://${contact.github}`} target="_blank" rel="noreferrer">
+            <a className="contact__link" href={`https://${contact.github}`} target="_blank" rel="noopener noreferrer">
               <span className="contact__link-label mono">{ui.linkGithub}</span>
               <span className="contact__link-value">{contact.github}</span>
             </a>

@@ -15,15 +15,22 @@ const SECTION_IDS = ["about", "experience", "projects", "skills", "contact"];
 
 export default function App() {
   const progress = useScrollProgress();
-  const { t } = useLanguage();
+  const { lang, t } = useLanguage();
   const [waypoints, setWaypoints] = useState([]);
   const [activeId, setActiveId] = useState("about");
 
   useEffect(() => {
+    document.documentElement.setAttribute("lang", lang);
     document.title = t.ui.pageTitle;
     const meta = document.querySelector('meta[name="description"]');
     if (meta) meta.setAttribute("content", t.ui.metaDescription);
-  }, [t]);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute("content", t.ui.pageTitle);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute("content", t.ui.metaDescription);
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute("content", lang === "id" ? "id_ID" : "en_US");
+  }, [lang, t]);
 
   useEffect(() => {
     const routeLabels = {
